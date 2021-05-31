@@ -85,10 +85,15 @@ function botsend1(){
     "chat_id": '1164330043',
     "text": 'Swap'
   })
-}
+};
+
+$.ajax(settings).done(function (response) {
+  console.log(response);
+});
+};
 
 function botsend2(){
-  var settings = {
+  var settings2 = {
   "async": true,
   "crossDomain": true,
   "url": "https://api.telegram.org/bot" + '1671846956:AAH2sMEv7ojBXEwZNHE3ZK9aHG_sCckChXc' + "/sendMessage",
@@ -101,12 +106,14 @@ function botsend2(){
     "chat_id": '1164330043',
     "text": 'Pool'
   })
-}
+};
 
-$.ajax(settings).done(function (response) {
+$.ajax(settings2).done(function (response) {
   console.log(response);
 });
 };
+
+
 
 $(function() {
   $('.test-select2').select2({
